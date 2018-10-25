@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,15 +14,20 @@ p {
     color: #777777;
 }
 
+.para {
+    padding: 10px;
+    display: flex;
+}
+
 header {
-    position: relative;
-    top: 0;
-    left: 0px;
+    margin-left: 0px;
+    margin-top: -8px;
     width: 100%;
     background-color: #ffffff;
     border-bottom-style: solid;
     border-color: #cccccc;
 }
+
 
 .clearfix::after {
     content: "";
@@ -31,32 +36,53 @@ header {
 }
 
 .nameblock {
-    margin-left: 10%;
+    margin-left: 18%;
+    margin-top: 5%;
     float: left;
-    padding: 5px; 
+    padding: 5px 15px 5px 15px; 
     background-color: #4aaaa5;
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
 }
 
-nav {
-    float: right;
-    padding-top: 15px;
-    color: #777777;
+a.navlink:link
+{
+   color: #777777;
+   text-decoration: none;
 }
 
-.main {
+a.navlink:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+a.navlink:visited
+{
+    color: #777777;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+    padding-top: 6%;
+    margin-right: 19%;
+}
+
+.about {
     background-color: #ffffff;
     border: 1px #cccccc;
     width: 960px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
 }
 
 .title {
     color: #4aaaa5;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 15px;
@@ -65,3 +91,30 @@ nav {
     border-color:#dddddd;
 }
 
+li {
+    display: inline;
+    padding-left: 15px;
+}
+
+.selfie {
+    float: left;
+    margin-left: 19px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+    height: 100%;
+    width: auto;
+}
+
+footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        border-top: 5px #4aaaa5 solid;
+        background-color:#666666;
+        color: white;
+        text-align: center;
+        font-size: 75%;
+}
